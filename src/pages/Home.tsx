@@ -1,7 +1,7 @@
 import React from "react";
 
-function App() {
+function Home() {
     return <p>hellworld</p>;
 }
 
-export default App;
+export default Home;
