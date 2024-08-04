@@ -1,15 +1,10 @@
 import React from "react";
-import Typography from "../components/typography/Typography";
-import Button from "../components/button/Button";
+import Login from "../components/login/Login";
 
 function Home() {
     return (
         <>
-            <Button>Register</Button>
-            <Button size="small" color="blue">
-                Login
-            </Button>
-            <Typography>Welcome to</Typography>
+            <Login />
         </>
     );
 }

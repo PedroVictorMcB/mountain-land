@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ButtonProps } from "./Button";
 
-export const ButtonFlat = styled.button<Pick<ButtonProps, "color">>`
+export const ButtonFlat = styled.button<Pick<ButtonProps, "color" | "onClick">>`
     color: ${(props) => props.color};
     text-decoration: underline;
     background-color: transparent;

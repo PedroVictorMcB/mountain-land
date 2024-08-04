@@ -6,6 +6,7 @@ export interface ButtonProps {
     size?: "small" | "medium" | "big";
     color?: string;
     type?: "solid" | "flat";
+    onClick?: Function;
 }
 
 const buttonSizes = {
@@ -20,9 +21,14 @@ export default function Button(props: ButtonProps) {
         size = "medium",
         color = "#b14343",
         type = "solid",
+        onClick,
     } = props;
 
     const ButtonRender = type !== "solid" ? S.ButtonFlat : buttonSizes[size];
 
-    return <ButtonRender color={color}>{children}</ButtonRender>;
+    return (
+        <ButtonRender color={color} onClick={onClick}>
+            {children}
+        </ButtonRender>
+    );
 }
