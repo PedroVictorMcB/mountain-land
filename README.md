@@ -1,7 +1,7 @@
 # Dummy Project
 
-This project aim to show my skills and techs as software developer.  
-Here I used react, typescript, css, hooks, router dom, and comsumed an dummy api to create a login and register system.
+This project aims to show my skill and techs as software developer.  
+Here I used react, typescript, css, hooks, router dom, and consumed a dummy api to create a login and register system.
 
 #### `DUMMYJSON`
 

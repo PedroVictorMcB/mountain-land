@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ToastWrapper = styled.div`
     padding: 1.5rem;
     position: absolute;
-    right: 2rem;
+    left: 2rem;
     top: 2rem;
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(3px);
