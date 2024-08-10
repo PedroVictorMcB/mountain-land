@@ -10,17 +10,24 @@ import Toast from "../toast/Toast";
 export default function Login() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const [isToastOpen, setIsToastOpen] = useState(false);
     const navigation = useNavigate();
 
     const { fetchData, isLoading, isSuccess, userInfo } = useAuth();
 
     const handleLogin = async () => {
         await fetchData({ username, password });
+        setIsToastOpen(true);
     };
+
+    const handleToastClose = () => {
+        setIsToastOpen(false);
 
     return (
         <>
             <Toast
+                isOpen={isToastOpen}
+                onClose={handleToastClose}
                 message={
                     isSuccess
                         ? `Bem vindo ${userInfo?.firstName}!`
