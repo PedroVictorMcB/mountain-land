@@ -9,7 +9,8 @@ export const ToastWrapper = styled.div`
     backdrop-filter: blur(3px);
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
-    width: 20rem;
+    width: 70%;
+    max-width: 28rem;
 `;
 
 export const ToastTitle = styled.div`

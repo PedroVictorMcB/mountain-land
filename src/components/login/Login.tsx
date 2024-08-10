@@ -22,7 +22,7 @@ export default function Login() {
 
     const handleToastClose = () => {
         setIsToastOpen(false);
-
+    };
     return (
         <>
             <Toast
@@ -85,7 +85,9 @@ export default function Login() {
                                 <Button
                                     type="flat"
                                     size="small"
-                                    onClick={() => navigation("register")}
+                                    onClick={() =>
+                                        navigation("recover-password")
+                                    }
                                 >
                                     I forgot my password
                                 </Button>
