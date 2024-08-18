@@ -52,7 +52,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    background-image: url("http://localhost:3000/img/mountainsbg.jpg");
+    background-image: url("../../public/img/mountainsbg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
